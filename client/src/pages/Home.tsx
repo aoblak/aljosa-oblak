@@ -1210,6 +1210,7 @@ function Footer() {
 }
 
 // ── Root Page Component ────────────────────────────────────────────────────
+// v1.1 — SEO+AIO optimized, keyword research applied, GitHub+Vercel ready
 export default function Home() {
   useReveal();
 
