@@ -19,6 +19,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { MapView } from "@/components/Map";
+import { MatrixRain } from "@/components/MatrixRain";
 
 // ── CDN image URLs (tied to webdev project lifecycle) ──────────────────────
 const IMG_HERO =
@@ -306,53 +307,59 @@ function HeroSection() {
       id="vrh"
       aria-label="Hero — Aljoša Oblak, poduzetnik i digitalni pionir"
       className="relative min-h-screen flex items-end pb-24 overflow-hidden clip-diagonal-bottom"
-      style={{ background: "oklch(0.18 0.06 245)" }}
+      style={{ background: "#000000" }}
     >
-      {/* Background image */}
+      {/* Matrix Rain background */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={IMG_HERO}
-          alt="Premantura peninsula aerial view — Istria, Croatia"
-          className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.18_0.06_245/0.92)] via-[oklch(0.18_0.06_245/0.55)] to-[oklch(0.18_0.06_245/0.2)]" />
+        <MatrixRain className="w-full h-full" fontSize={15} />
+        {/* Bottom fade so text is readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
       </div>
 
       {/* Content */}
       <div className="container relative z-10">
         <div className="max-w-3xl">
           {/* Mono tag */}
-          <div className="mono-tag inline-block mb-6 text-[oklch(0.78_0.14_195)]">
+          <div className="mono-tag inline-block mb-6" style={{ color: "#00ff41", borderColor: "#00ff4140", background: "rgba(0,255,65,0.08)" }}>
             Premantura · Istra · Hrvatska
           </div>
 
           {/* H1 — primary SEO keyword target */}
           <h1
-            className="font-display text-white mb-6 leading-none"
-            style={{ fontSize: "clamp(2.8rem, 7vw, 6rem)", fontWeight: 900 }}
+            className="font-display mb-6 leading-none"
+            style={{
+              fontSize: "clamp(2.8rem, 7vw, 6rem)",
+              fontWeight: 900,
+              color: "#00ff41",
+              textShadow: "0 0 30px #00ff4180, 0 0 60px #00cc3340",
+            }}
           >
             Aljoša
             <br />
-            <span style={{ color: "oklch(0.78 0.14 195)" }}>Oblak</span>
+            <span style={{ color: "#e0ffe0", textShadow: "0 0 20px #00ff4199" }}>Oblak</span>
           </h1>
 
           <p
-            className="text-[oklch(0.88_0.018_80)] mb-3"
+            className="mb-3"
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "clamp(1.1rem, 2.5vw, 1.6rem)",
               fontStyle: "italic",
               fontWeight: 400,
+              color: "#a0ffa0",
             }}
           >
             Poduzetnik · Web &amp; AI Stručnjak · Digitalni Pionir
           </p>
 
           <p
-            className="text-[oklch(0.78_0.14_195/0.9)] mb-10 max-w-xl"
-            style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", lineHeight: 1.7 }}
+            className="mb-10 max-w-xl"
+            style={{
+              fontFamily: "var(--font-body)",
+              fontSize: "1.05rem",
+              lineHeight: 1.7,
+              color: "#66dd66",
+            }}
           >
             Osnivač web &amp; AI agencije u Premanturi, kultnog Cyber Internet &amp; Beyond
             cafea u Puli i Dunja Apartments uz more. Gradim digitalna rješenja
@@ -363,8 +370,8 @@ function HeroSection() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#projekti"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[oklch(0.78_0.14_195)] text-[oklch(0.18_0.06_245)] font-semibold text-sm tracking-widest uppercase transition-all hover:bg-[oklch(0.72_0.14_195)] hover:shadow-lg"
-              style={{ fontFamily: "var(--font-body)" }}
+              className="inline-flex items-center gap-2 px-8 py-3.5 font-semibold text-sm tracking-widest uppercase transition-all hover:shadow-lg"
+              style={{ background: "#00ff41", color: "#000", boxShadow: "0 0 20px #00ff4140", fontFamily: "var(--font-body)" }}
             >
               Moji projekti
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -373,8 +380,8 @@ function HeroSection() {
             </a>
             <a
               href="#kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 border border-[oklch(0.78_0.14_195/0.6)] text-[oklch(0.78_0.14_195)] font-semibold text-sm tracking-widest uppercase transition-all hover:border-[oklch(0.78_0.14_195)] hover:bg-[oklch(0.78_0.14_195/0.08)]"
-              style={{ fontFamily: "var(--font-body)" }}
+              className="inline-flex items-center gap-2 px-8 py-3.5 font-semibold text-sm tracking-widest uppercase transition-all"
+              style={{ border: "1px solid #00ff4166", color: "#00ff41", fontFamily: "var(--font-body)" }}
             >
               Kontakt
             </a>
@@ -382,9 +389,9 @@ function HeroSection() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-2 text-[oklch(0.78_0.14_195/0.6)]">
+        <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-2" style={{ color: "#00ff4166" }}>
           <span className="mono-tag text-[0.6rem]">Scroll</span>
-          <div className="w-px h-12 bg-[oklch(0.78_0.14_195/0.4)] animate-pulse" />
+          <div className="w-px h-12 animate-pulse" style={{ background: "#00ff4140" }} />
         </div>
       </div>
     </section>
