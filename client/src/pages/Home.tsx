@@ -17,9 +17,10 @@
  * AIO: JSON-LD Person + 3x LocalBusiness, FAQ schema, semantic HTML5
  */
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { MapView } from "@/components/Map";
 import { MatrixRain } from "@/components/MatrixRain";
+import { MatrixTypewriter } from "@/components/MatrixTypewriter";
 
 // ── CDN image URLs (tied to webdev project lifecycle) ──────────────────────
 const IMG_HERO =
@@ -325,19 +326,16 @@ function HeroSection() {
           </div>
 
           {/* H1 — primary SEO keyword target */}
-          <h1
+          {/* H1 — Matrix typewriter animation */}
+          <MatrixTypewriter
+            line1="Aljoša"
+            line2="Oblak"
             className="font-display mb-6 leading-none"
             style={{
               fontSize: "clamp(2.8rem, 7vw, 6rem)",
               fontWeight: 900,
-              color: "#00ff41",
-              textShadow: "0 0 30px #00ff4180, 0 0 60px #00cc3340",
             }}
-          >
-            Aljoša
-            <br />
-            <span style={{ color: "#e0ffe0", textShadow: "0 0 20px #00ff4199" }}>Oblak</span>
-          </h1>
+          />
 
           <p
             className="mb-3"

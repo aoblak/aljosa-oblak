@@ -121,3 +121,4 @@ client/public/__manus__/version.json
 # SEO keyword research (local only)
 SEO_KEYWORDS.md
 ideas.md
+.project-config.json
