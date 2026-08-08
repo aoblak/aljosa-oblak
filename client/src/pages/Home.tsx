@@ -740,36 +740,110 @@ function ProjectsSection() {
 }
 
 // ── Services / Skills Section ──────────────────────────────────────────────
+// Custom SVG icons for each strategic pillar
+function PillarIcon({ name, className = "" }: { name: string; className?: string }) {
+  const svgProps = { width: 40, height: 40, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, className, "aria-hidden": true as const };
+
+  switch (name) {
+    case "ai":
+      return (
+        <svg {...svgProps}>
+          <path d="M12 2a4 4 0 014 4v1h-8V6a4 4 0 014-4z" />
+          <rect x="4" y="7" width="16" height="12" rx="2" />
+          <circle cx="9" cy="13" r="1.5" fill="currentColor" />
+          <circle cx="15" cy="13" r="1.5" fill="currentColor" />
+          <path d="M9 17h6" />
+          <path d="M12 19v3M8 22h8" />
+        </svg>
+      );
+    case "integration":
+      return (
+        <svg {...svgProps}>
+          <circle cx="5" cy="6" r="2" />
+          <circle cx="19" cy="6" r="2" />
+          <circle cx="5" cy="18" r="2" />
+          <circle cx="19" cy="18" r="2" />
+          <path d="M7 6h10M7 18h10M5 8v8M19 8v8" />
+          <rect x="9" y="9" width="6" height="6" rx="1" fill="currentColor" opacity="0.2" />
+          <path d="M12 9v6M9 12h6" />
+        </svg>
+      );
+    case "hospitality":
+      return (
+        <svg {...svgProps}>
+          <path d="M3 21h18" />
+          <path d="M5 21V7l7-4 7 4v14" />
+          <rect x="9" y="13" width="6" height="8" rx="0.5" />
+          <path d="M9 9h2M13 9h2" />
+          <path d="M9 11h2M13 11h2" />
+          <circle cx="12" cy="5" r="0.5" fill="currentColor" />
+        </svg>
+      );
+    case "programme":
+      return (
+        <svg {...svgProps}>
+          <path d="M4 4h16v16H4z" strokeDasharray="2 2" />
+          <path d="M4 9h16" />
+          <path d="M9 4v16" />
+          <circle cx="6.5" cy="6.5" r="1" fill="currentColor" />
+          <path d="M12 12l2 2 4-4" />
+          <path d="M12 16h5" />
+        </svg>
+      );
+    case "adriatic":
+      return (
+        <svg {...svgProps}>
+          <path d="M2 12c1.5-2 3-3 5-3s3.5 1 5 3 3 3 5 3 3.5-1 5-3" />
+          <path d="M2 16c1.5-2 3-3 5-3s3.5 1 5 3 3 3 5 3 3.5-1 5-3" opacity="0.5" />
+          <path d="M2 8c1.5-2 3-3 5-3s3.5 1 5 3 3 3 5 3 3.5-1 5-3" opacity="0.3" />
+          <circle cx="12" cy="6" r="2" fill="currentColor" opacity="0.4" />
+          <path d="M12 4v-2M14 5l1-1M10 5l-1-1" />
+        </svg>
+      );
+    case "human":
+      return (
+        <svg {...svgProps}>
+          <circle cx="12" cy="7" r="3" />
+          <path d="M5 21v-2a5 5 0 015-5h4a5 5 0 015 5v2" />
+          <path d="M16 3.13a4 4 0 010 7.75" opacity="0.4" />
+          <path d="M21 21v-2a4 4 0 00-3-3.87" opacity="0.4" />
+          <path d="M12 14v3M10 16h4" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
 function ServicesSection() {
-  // Six strategic pillars from brand strategy document
   const services = [
     {
-      icon: "🤖",
+      iconName: "ai",
       title: "Praktična implementacija AI-a",
       desc: "Primjena AI-a na definirane procese, odluke i korisničke tijekove — ne apstraktna 'AI transformacija', već strukturirani program koji ljudi mogu stvarno koristiti.",
     },
     {
-      icon: "⚙️",
+      iconName: "integration",
       title: "Sistemska integracija",
       desc: "Povezivanje infrastrukture, web sustava, automatizacije, podataka i ljudskih odgovornosti. Manje nepovezanih alata, jasnije vlasništvo, pouzdanije operacije.",
     },
     {
-      icon: "🏨",
+      iconName: "hospitality",
       title: "Tehnologija ugostiteljstva",
       desc: "Tretiranje smještaja kao mjerljivog operativnog sustava: konzistentni podaci kanala, brža komunikacija s gostima, direktna rezervacija i vidljivost prihoda.",
     },
     {
-      icon: "🗺️",
+      iconName: "programme",
       title: "Upravljanje programima",
       desc: "Od koncepta kroz zahtjeve, partnere, testiranje, rizike i isporuku. Smanjenje nejasnoća u projektu i rano prepoznavanje skupih grešaka.",
     },
     {
-      icon: "🌊",
+      iconName: "adriatic",
       title: "Jadransko dokazno polje",
       desc: "Gradnja iz Istre uz rješavanje međunarodno relevantnih problema — turizam, morska inovacija i lokalni SME ekosustav kao autentičan i distinktivan kontekst.",
     },
     {
-      icon: "🔒",
+      iconName: "human",
       title: "Tehnologija usmjerena na čovjeka",
       desc: "Dizajn za jasnoću, odgovornost, privatnost i sigurnost od samog početka. Tehnologija treba povećati ljudske sposobnosti — ne stvoriti složenost radi sebe.",
     },
@@ -804,21 +878,57 @@ function ServicesSection() {
           {services.map((s, i) => (
             <div
               key={s.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} p-7 border border-[oklch(0.28_0.06_245)] hover:border-[oklch(0.78_0.14_195/0.5)] transition-all duration-300 hover:bg-[oklch(0.22_0.06_245)] group`}
+              className={`reveal reveal-delay-${(i % 4) + 1} relative p-8 border border-[oklch(0.28_0.06_245)] transition-all duration-500 ease-out group cursor-default overflow-hidden`}
+              style={{
+                background: "oklch(0.14 0.04 245)",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget;
+                el.style.transform = "translateY(-6px) scale(1.02)";
+                el.style.borderColor = "#42F58D88";
+                el.style.boxShadow = "0 12px 40px #42F58D15, 0 0 0 1px #42F58D33, inset 0 1px 0 #42F58D11";
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget;
+                el.style.transform = "translateY(0) scale(1)";
+                el.style.borderColor = "";
+                el.style.boxShadow = "none";
+              }}
             >
-              <div className="text-3xl mb-4" aria-hidden="true">{s.icon}</div>
+              {/* Background glow on hover */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{
+                  background: "radial-gradient(ellipse at 30% 20%, #42F58D08 0%, transparent 70%)",
+                }}
+              />
+
+              {/* Icon */}
+              <div className="relative mb-5 text-[oklch(0.55_0.04_245)] group-hover:text-[#42F58D] transition-all duration-500 group-hover:-translate-y-1">
+                <PillarIcon name={s.iconName} />
+              </div>
+
+              {/* Title */}
               <h3
-                className="font-display text-white mb-3"
+                className="relative font-display text-white mb-3 group-hover:text-[#e8fff2] transition-colors duration-300"
                 style={{ fontSize: "1.15rem", fontWeight: 600 }}
               >
                 {s.title}
               </h3>
+
+              {/* Description */}
               <p
-                className="text-[oklch(0.62_0.04_245)] text-sm leading-relaxed"
+                className="relative text-[oklch(0.55_0.04_245)] text-sm leading-relaxed group-hover:text-[oklch(0.68_0.04_245)] transition-colors duration-300"
                 style={{ fontFamily: "var(--font-body)" }}
               >
                 {s.desc}
               </p>
+
+              {/* Bottom accent line on hover */}
+              <div
+                className="absolute bottom-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-700 ease-out"
+                style={{ background: "linear-gradient(90deg, #42F58D, #42F58D66, transparent)" }}
+              />
             </div>
           ))}
         </div>
