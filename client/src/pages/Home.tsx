@@ -11,7 +11,7 @@
  * - "izrada web stranica Premantura/Medulin/Istra"
  * - "AI web rješenja Istra", "web agencija Istra"
  * - "Cyber Internet Beyond Pula Flanatička 14"
- * - "Dunja Apartments Premantura direktna rezervacija"
+ * - "Dunja Residence Premantura direktna rezervacija"
  * - "Aljoša Oblak poduzetnik Premantura"
  *
  * AIO: JSON-LD Person + 3x LocalBusiness, FAQ schema, semantic HTML5
@@ -21,16 +21,15 @@ import { useEffect, useState } from "react";
 import { MapView } from "@/components/Map";
 import { MatrixRain } from "@/components/MatrixRain";
 import { MatrixTypewriter } from "@/components/MatrixTypewriter";
+import { DunjaGallery } from "@/components/DunjaGallery";
 
 // ── CDN image URLs (tied to webdev project lifecycle) ──────────────────────
 const IMG_HERO =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663029482261/VW7SkNmS6AogFLPGcjPDHp/hero-premantura-NHQfY3ZZqRZSXfkjsU86We.webp";
-const IMG_CYBER =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310419663029482261/VW7SkNmS6AogFLPGcjPDHp/cyber-cafe-pula-cntDaqm3c87bqbEXCpN9jk.webp";
+const IMG_CYBER = "/manus-storage/cyber-exterior-real_d6bf1b95.jpg";
 const IMG_AGENCY =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663029482261/VW7SkNmS6AogFLPGcjPDHp/web-agency-workspace-C97cbPtmPN9ptaBWtsUoyL.webp";
-const IMG_DUNJA =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310419663029482261/VW7SkNmS6AogFLPGcjPDHp/dunja-apartments-o4frC9Di4zagDZxffAf5jf.webp";
+const IMG_DUNJA = "/manus-storage/dunja-exterior-real_c330823f.jpg";
 
 // ── Scroll-reveal hook ─────────────────────────────────────────────────────
 function useReveal() {
@@ -61,12 +60,12 @@ const JSONLD = {
       name: "Aljoša Oblak",
       jobTitle: "Technology Integrator, Founder of Cyber – Internet & Beyond",
       description:
-        "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra. Osnivač Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Apartments u Premanturi.",
+        "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra. Osnivač Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Residence u Premanturi.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Brig 11",
         addressLocality: "Premantura",
-        postalCode: "52203",
+        postalCode: "52100",
         addressRegion: "Medulin",
         addressCountry: "HR",
       },
@@ -116,7 +115,7 @@ const JSONLD = {
         "@type": "PostalAddress",
         streetAddress: "Brig 11",
         addressLocality: "Premantura",
-        postalCode: "52203",
+        postalCode: "52100",
         addressRegion: "Medulin",
         addressCountry: "HR",
       },
@@ -140,14 +139,14 @@ const JSONLD = {
     {
       "@type": "LodgingBusiness",
       "@id": "https://aljosaoblak.com/#dunja",
-      name: "Dunja Apartments",
+      name: "Dunja Residence",
       description:
         "Apartmani uz more u Premanturi, Brig 11. Direktna rezervacija bez provizije. Beachfront smještaj u Istri.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Brig 11",
         addressLocality: "Premantura",
-        postalCode: "52203",
+        postalCode: "52100",
         addressRegion: "Medulin",
         addressCountry: "HR",
       },
@@ -168,7 +167,7 @@ const JSONLD = {
           name: "Tko je Aljoša Oblak?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra, Hrvatska. Osnivač je Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Apartments u Premanturi.",
+            text: "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra, Hrvatska. Osnivač je Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Residence u Premanturi.",
           },
         },
         {
@@ -176,7 +175,7 @@ const JSONLD = {
           name: "Gdje se nalazi Web Development Agency Premantura?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Web Development Agency Premantura nalazi se na adresi Brig 11, Premantura, 52203 Medulin, Istra, Hrvatska. Agencija se bavi izradom web stranica i AI rješenjima za poduzetnike u Istri i šire.",
+            text: "Web Development Agency Premantura nalazi se na adresi Brig 11, Premantura, 52100 Premantura, Istra, Hrvatska. Agencija se bavi izradom web stranica i AI rješenjima za poduzetnike u Istri i šire.",
           },
         },
         {
@@ -189,10 +188,10 @@ const JSONLD = {
         },
         {
           "@type": "Question",
-          name: "Kako rezervirati Dunja Apartments Premantura?",
+          name: "Kako rezervirati Dunja Residence Premantura?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Dunja Apartments u Premanturi (Brig 11, 52203 Medulin) možete rezervirati direktno kontaktiranjem Aljoše Oblaka na broj +385 95 518 6313 ili emailom. Direktna rezervacija bez provizije.",
+            text: "Dunja Residence u Premanturi (Brig 11, 52100 Premantura) možete rezervirati direktno kontaktiranjem Aljoše Oblaka na broj +385 95 518 6313 ili emailom. Direktna rezervacija bez provizije.",
           },
         },
       ],
@@ -606,12 +605,12 @@ function ProjectsSection() {
       id: "apartmani",
       num: "03",
       tag: "Apart House · Premantura · Brig 11",
-      title: "Dunja Apartments",
-      subtitle: "Apartmani uz more, Premantura",
-      desc: "Beachfront apart house na adresi Brig 11 u Premanturi, 52203 Medulin. Direktan pristup moru, vrt, besplatni bicikli i WiFi. Autentičan istarski smještaj u jednom od najljepših mjesta na poluotoku Kamenjak. Direktna rezervacija bez provizije.",
+      title: "Dunja Residence",
+      subtitle: "Residence uz more, Premantura",
+      desc: "Beachfront apart house na adresi Brig 11 u Premanturi, 52100 Premantura. Direktan pristup moru, vrt, besplatni bicikli i WiFi. Autentičan istarski smještaj u jednom od najljepših mjesta na poluotoku Kamenjak. Direktna rezervacija bez provizije.",
       img: IMG_DUNJA,
-      imgAlt: "Dunja Apartments Premantura — mediteranska arhitektura s maslinicima i kristalno čistim Jadranskim morem",
-      keywords: ["Dunja Apartments Premantura", "apartmani uz more Premantura", "direktna rezervacija"],
+      imgAlt: "Dunja Residence Premantura — mediteranska arhitektura s maslinicima i kristalno čistim Jadranskim morem",
+      keywords: ["Dunja Residence Premantura", "apartmani uz more Premantura", "direktna rezervacija"],
       href: "#apartmani",
       color: "oklch(0.55 0.1 245)",
     },
@@ -733,6 +732,26 @@ function ProjectsSection() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Dunja Residence Interactive Gallery */}
+        <div className="mt-12 reveal reveal-delay-2">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-8 h-px bg-[oklch(0.55_0.1_245)]" />
+            <h3
+              className="font-display text-[oklch(0.18_0.06_245)]"
+              style={{ fontSize: "1.3rem", fontWeight: 600 }}
+            >
+              Dunja Residence — Galerija
+            </h3>
+          </div>
+          <p
+            className="text-[oklch(0.45_0.04_245)] text-sm mb-2"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Kliknite na sliku za prikaz u punoj veličini. Navigirajte strelicama ili tipkovnicom.
+          </p>
+          <DunjaGallery />
         </div>
       </div>
     </section>
@@ -997,7 +1016,7 @@ function FAQSection() {
   const faqs = [
     {
       q: "Tko je Aljoša Oblak?",
-      a: "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra, Hrvatska (Brig 11, 52203 Medulin). Osnivač je Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Apartments u Premanturi.",
+      a: "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra, Hrvatska (Brig 11, 52100 Premantura). Osnivač je Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Residence u Premanturi.",
     },
     {
       q: "Koje usluge nudi Web Development Agency Premantura?",
@@ -1008,8 +1027,8 @@ function FAQSection() {
       a: "Cyber Internet & Beyond je kultni internet cafe na adresi Flanatička 14, Pula (52100), otvoren 2000. godine. Jedan od prvih i najdugovječnijih internet cafea u Istri, postao je ikonično mjesto digitalne kulture u Puli.",
     },
     {
-      q: "Kako rezervirati Dunja Apartments u Premanturi?",
-      a: "Dunja Apartments (Brig 11, Premantura, 52203 Medulin) možete rezervirati direktno — bez provizije OTA platformi. Kontaktirajte Alješu Oblaka na +385 95 518 6313 ili emailom. Beachfront smještaj s direktnim pristupom moru.",
+      q: "Kako rezervirati Dunja Residence u Premanturi?",
+      a: "Dunja Residence (Brig 11, Premantura, 52100 Premantura) možete rezervirati direktno — bez provizije OTA platformi. Kontaktirajte Alješu Oblaka na +385 95 518 6313 ili emailom. Beachfront smještaj s direktnim pristupom moru.",
     },
     {
       q: "Koliko košta izrada web stranice u Istri?",
@@ -1107,7 +1126,7 @@ function ContactSection() {
             className="text-[oklch(0.45_0.04_245)] mt-3 max-w-lg"
             style={{ fontFamily: "var(--font-body)", lineHeight: 1.7 }}
           >
-            Web agencija Premantura · Dunja Apartments · Cyber Internet Pula.
+            Web agencija Premantura · Dunja Residence · Cyber Internet Pula.
             Javite se za web projekt, rezervaciju apartmana ili suradnju.
           </p>
         </div>
@@ -1131,7 +1150,7 @@ function ContactSection() {
                   className="text-[oklch(0.45_0.04_245)] text-sm"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  52203 Medulin, Istra, Hrvatska
+                  52100 Premantura, Istra, Hrvatska
                 </div>
               </address>
 
@@ -1349,7 +1368,7 @@ function Footer() {
               Gradim praktične sustave na sjecištu tehnologije i operacija.
             </p>
             <address className="not-italic mt-4 text-sm" style={{ fontFamily: "var(--font-body)" }}>
-              <div>Brig 11, Premantura, 52203 Medulin</div>
+              <div>Brig 11, Premantura, 52100 Premantura</div>
               <div>
                 <a href="tel:+385955186313" className="hover:text-[oklch(0.78_0.14_195)] transition-colors">
                   +385 95 518 6313
@@ -1396,7 +1415,7 @@ function Footer() {
             <ul className="space-y-2 list-none p-0 m-0" style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem" }}>
               <li>Cyber Internet &amp; Beyond</li>
               <li>Web Dev Agency Premantura</li>
-              <li>Dunja Apartments</li>
+              <li>Dunja Residence</li>
             </ul>
           </div>
         </div>
