@@ -56,28 +56,28 @@ const JSONLD = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://aljosaoblak.com/#person",
+      "@id": "{{WEBSITE_URL}}/#person",
       name: "Aljoša Oblak",
       jobTitle: "Technology Integrator, Founder of Cyber – Internet & Beyond",
       description:
         "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra. Osnivač Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Residence u Premanturi.",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Brig 11",
+        streetAddress: "{{STREET_ADDRESS}}",
         addressLocality: "Premantura",
         postalCode: "52100",
         addressRegion: "Medulin",
         addressCountry: "HR",
       },
-      email: "aljosa@oblak.hr",
-      telephone: "+385955186313",
-      url: "https://aljosaoblak.com",
+      email: "{{CONTACT_EMAIL}}",
+      telephone: "{{CONTACT_PHONE}}",
+      url: "{{WEBSITE_URL}}",
       sameAs: [
-        "https://hr.linkedin.com/in/aljosaoblak",
-        "https://www.facebook.com/aljosa.oblak.7/",
-        "https://www.facebook.com/cybercafepula/",
-        "https://www.instagram.com/aljosa.nebeski/",
-        "https://www.youtube.com/c/AljosaOblak",
+        "{{LINKEDIN_URL}}",
+        "{{FACEBOOK_PERSONAL_URL}}",
+        "{{FACEBOOK_CYBER_URL}}",
+        "{{INSTAGRAM_URL}}",
+        "{{YOUTUBE_URL}}",
       ],
       knowsAbout: [
         "Web Development",
@@ -90,7 +90,7 @@ const JSONLD = {
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://aljosaoblak.com/#cyber",
+      "@id": "{{WEBSITE_URL}}/#cyber",
       name: "Cyber Internet & Beyond",
       description:
         "Kultni internet cafe u Puli, Flanatička 14. Otvoren 2000. godine, pionir interneta u Istri.",
@@ -101,26 +101,26 @@ const JSONLD = {
         postalCode: "52100",
         addressCountry: "HR",
       },
-      telephone: "+385955186313",
-      url: "https://www.facebook.com/cybercafepula/",
-      founder: { "@id": "https://aljosaoblak.com/#person" },
+      telephone: "{{CONTACT_PHONE}}",
+      url: "{{FACEBOOK_CYBER_URL}}",
+      founder: { "@id": "{{WEBSITE_URL}}/#person" },
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://aljosaoblak.com/#agency",
+      "@id": "{{WEBSITE_URL}}/#agency",
       name: "Web Development Agency Premantura",
       description:
         "Web agencija u Premanturi za izradu web stranica i AI rješenja. Specijalizirana za lokalna poduzeća u Istri i Medulinu.",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Brig 11",
+        streetAddress: "{{STREET_ADDRESS}}",
         addressLocality: "Premantura",
         postalCode: "52100",
         addressRegion: "Medulin",
         addressCountry: "HR",
       },
-      telephone: "+385955186313",
-      founder: { "@id": "https://aljosaoblak.com/#person" },
+      telephone: "{{CONTACT_PHONE}}",
+      founder: { "@id": "{{WEBSITE_URL}}/#person" },
       serviceArea: {
         "@type": "GeoCircle",
         geoMidpoint: { "@type": "GeoCoordinates", latitude: 44.7636, longitude: 13.9212 },
@@ -138,20 +138,20 @@ const JSONLD = {
     },
     {
       "@type": "LodgingBusiness",
-      "@id": "https://aljosaoblak.com/#dunja",
+      "@id": "{{WEBSITE_URL}}/#dunja",
       name: "Dunja Residence",
       description:
-        "Apartmani uz more u Premanturi, Brig 11. Direktna rezervacija bez provizije. Beachfront smještaj u Istri.",
+        "Apartmani uz more u Premanturi, {{STREET_ADDRESS}}. Direktna rezervacija bez provizije. Beachfront smještaj u Istri.",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Brig 11",
+        streetAddress: "{{STREET_ADDRESS}}",
         addressLocality: "Premantura",
         postalCode: "52100",
         addressRegion: "Medulin",
         addressCountry: "HR",
       },
-      telephone: "+385955186313",
-      founder: { "@id": "https://aljosaoblak.com/#person" },
+      telephone: "{{CONTACT_PHONE}}",
+      founder: { "@id": "{{WEBSITE_URL}}/#person" },
       amenityFeature: [
         { "@type": "LocationFeatureSpecification", name: "Beachfront", value: true },
         { "@type": "LocationFeatureSpecification", name: "Free WiFi", value: true },
@@ -175,7 +175,7 @@ const JSONLD = {
           name: "Gdje se nalazi Web Development Agency Premantura?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Web Development Agency Premantura nalazi se na adresi Brig 11, Premantura, 52100 Premantura, Istra, Hrvatska. Agencija se bavi izradom web stranica i AI rješenjima za poduzetnike u Istri i šire.",
+            text: "Web Development Agency Premantura nalazi se na adresi {{STREET_ADDRESS}}, Premantura, 52100 Premantura, Istra, Hrvatska. Agencija se bavi izradom web stranica i AI rješenjima za poduzetnike u Istri i šire.",
           },
         },
         {
@@ -191,7 +191,7 @@ const JSONLD = {
           name: "Kako rezervirati Dunja Residence Premantura?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Dunja Residence u Premanturi (Brig 11, 52100 Premantura) možete rezervirati direktno kontaktiranjem Aljoše Oblaka na broj +385 95 518 6313 ili emailom. Direktna rezervacija bez provizije.",
+            text: "Dunja Residence u Premanturi ({{STREET_ADDRESS}}, 52100 Premantura) možete rezervirati direktno kontaktiranjem Aljoše Oblaka na broj {{CONTACT_PHONE_DISPLAY}} ili emailom. Direktna rezervacija bez provizije.",
           },
         },
       ],
@@ -604,10 +604,10 @@ function ProjectsSection() {
     {
       id: "apartmani",
       num: "03",
-      tag: "Apart House · Premantura · Brig 11",
+      tag: "Apart House · Premantura · {{STREET_ADDRESS}}",
       title: "Dunja Residence",
       subtitle: "Residence uz more, Premantura",
-      desc: "Beachfront apart house na adresi Brig 11 u Premanturi, 52100 Premantura. Direktan pristup moru, vrt, besplatni bicikli i WiFi. Autentičan istarski smještaj u jednom od najljepših mjesta na poluotoku Kamenjak. Direktna rezervacija bez provizije.",
+      desc: "Beachfront apart house na adresi {{STREET_ADDRESS}} u Premanturi, 52100 Premantura. Direktan pristup moru, vrt, besplatni bicikli i WiFi. Autentičan istarski smještaj u jednom od najljepših mjesta na poluotoku Kamenjak. Direktna rezervacija bez provizije.",
       img: IMG_DUNJA,
       imgAlt: "Dunja Residence Premantura — mediteranska arhitektura s maslinicima i kristalno čistim Jadranskim morem",
       keywords: ["Dunja Residence Premantura", "apartmani uz more Premantura", "direktna rezervacija"],
@@ -994,14 +994,14 @@ function CTASection() {
               </svg>
             </a>
             <a
-              href="tel:+385955186313"
+              href="tel:{{CONTACT_PHONE}}"
               className="inline-flex items-center gap-2 px-10 py-4 border border-[oklch(0.18_0.06_245)] text-[oklch(0.18_0.06_245)] font-semibold text-sm tracking-widest uppercase transition-all hover:bg-[oklch(0.18_0.06_245/0.05)]"
               style={{ fontFamily: "var(--font-body)" }}
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M2 3a1 1 0 011-1h2.5a1 1 0 011 1v2a1 1 0 01-.6.92l-1.1.55a9 9 0 004.73 4.73l.55-1.1A1 1 0 0111 9.5h2a1 1 0 011 1V13a1 1 0 01-1 1h-1C5.37 14 2 10.63 2 6.5V3z" stroke="currentColor" strokeWidth="1.2" fill="none" />
               </svg>
-              +385 95 518 6313
+              {{CONTACT_PHONE_DISPLAY}}
             </a>
           </div>
         </div>
@@ -1016,7 +1016,7 @@ function FAQSection() {
   const faqs = [
     {
       q: "Tko je Aljoša Oblak?",
-      a: "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra, Hrvatska (Brig 11, 52100 Premantura). Osnivač je Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Residence u Premanturi.",
+      a: "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra, Hrvatska ({{STREET_ADDRESS}}, 52100 Premantura). Osnivač je Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Residence u Premanturi.",
     },
     {
       q: "Koje usluge nudi Web Development Agency Premantura?",
@@ -1028,7 +1028,7 @@ function FAQSection() {
     },
     {
       q: "Kako rezervirati Dunja Residence u Premanturi?",
-      a: "Dunja Residence (Brig 11, Premantura, 52100 Premantura) možete rezervirati direktno — bez provizije OTA platformi. Kontaktirajte Alješu Oblaka na +385 95 518 6313 ili emailom. Beachfront smještaj s direktnim pristupom moru.",
+      a: "Dunja Residence ({{STREET_ADDRESS}}, Premantura, 52100 Premantura) možete rezervirati direktno — bez provizije OTA platformi. Kontaktirajte Alješu Oblaka na {{CONTACT_PHONE_DISPLAY}} ili emailom. Beachfront smještaj s direktnim pristupom moru.",
     },
     {
       q: "Koliko košta izrada web stranice u Istri?",
@@ -1101,7 +1101,7 @@ function ContactSection() {
     // Compose mailto link
     const subject = encodeURIComponent(`Upit od ${form.name}`);
     const body = encodeURIComponent(`Ime: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
-    window.location.href = `mailto:aljosa@oblak.hr?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:{{CONTACT_EMAIL}}?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -1144,7 +1144,7 @@ function ContactSection() {
                   className="font-display text-[oklch(0.18_0.06_245)] font-bold mb-1"
                   style={{ fontSize: "1.1rem" }}
                 >
-                  Brig 11, Premantura
+                  {{STREET_ADDRESS}}, Premantura
                 </div>
                 <div
                   className="text-[oklch(0.45_0.04_245)] text-sm"
@@ -1179,20 +1179,20 @@ function ContactSection() {
                 {
                   icon: "📞",
                   label: "Telefon",
-                  value: "+385 95 518 6313",
-                  href: "tel:+385955186313",
+                  value: "{{CONTACT_PHONE_DISPLAY}}",
+                  href: "tel:{{CONTACT_PHONE}}",
                 },
                 {
                   icon: "✉️",
                   label: "Email",
-                  value: "aljosa@oblak.hr",
-                  href: "mailto:aljosa@oblak.hr",
+                  value: "{{CONTACT_EMAIL}}",
+                  href: "mailto:{{CONTACT_EMAIL}}",
                 },
                 {
                   icon: "🌐",
                   label: "Facebook — Cyber Cafe",
-                  value: "facebook.com/cybercafepula",
-                  href: "https://www.facebook.com/cybercafepula/",
+                  value: "{{FACEBOOK_CYBER_DISPLAY}}",
+                  href: "{{FACEBOOK_CYBER_URL}}",
                 },
               ].map((c) => (
                 <a
@@ -1223,7 +1223,7 @@ function ContactSection() {
 
             {/* Google Map */}
             <div className="border border-[oklch(0.85_0.02_80)] overflow-hidden">
-              <div className="mono-tag m-4 inline-block">Premantura, Brig 11</div>
+              <div className="mono-tag m-4 inline-block">Premantura, {{STREET_ADDRESS}}</div>
               <MapView
                 initialCenter={{ lat: 44.7636, lng: 13.9212 }}
                 initialZoom={14}
@@ -1368,15 +1368,15 @@ function Footer() {
               Gradim praktične sustave na sjecištu tehnologije i operacija.
             </p>
             <address className="not-italic mt-4 text-sm" style={{ fontFamily: "var(--font-body)" }}>
-              <div>Brig 11, Premantura, 52100 Premantura</div>
+              <div>{{STREET_ADDRESS}}, Premantura, 52100 Premantura</div>
               <div>
-                <a href="tel:+385955186313" className="hover:text-[oklch(0.78_0.14_195)] transition-colors">
-                  +385 95 518 6313
+                <a href="tel:{{CONTACT_PHONE}}" className="hover:text-[oklch(0.78_0.14_195)] transition-colors">
+                  {{CONTACT_PHONE_DISPLAY}}
                 </a>
               </div>
               <div>
-                <a href="mailto:aljosa@oblak.hr" className="hover:text-[oklch(0.78_0.14_195)] transition-colors">
-                  aljosa@oblak.hr
+                <a href="mailto:{{CONTACT_EMAIL}}" className="hover:text-[oklch(0.78_0.14_195)] transition-colors">
+                  {{CONTACT_EMAIL}}
                 </a>
               </div>
             </address>
