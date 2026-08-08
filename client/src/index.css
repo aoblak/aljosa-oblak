@@ -59,8 +59,8 @@
   --limestone: oklch(0.97 0.012 82);
   /* Adriatic deep navy */
   --navy: oklch(0.18 0.06 245);
-  /* Electric cyan (bioluminescent sea) */
-  --cyan: oklch(0.78 0.14 195);
+  /* Beyond green — strategy signal accent #42F58D */
+  --cyan: oklch(0.84 0.18 155);
   /* Sunset gold (Pula Arena stone) */
   --gold: oklch(0.72 0.12 75);
   /* Stone mid-tone */
@@ -83,26 +83,26 @@
   --secondary-foreground: oklch(0.18 0.06 245);
   --muted: oklch(0.93 0.01 80);
   --muted-foreground: oklch(0.45 0.04 245);
-  --accent: oklch(0.78 0.14 195);            /* electric cyan */
+  --accent: oklch(0.84 0.18 155);            /* Beyond green #42F58D */
   --accent-foreground: oklch(0.18 0.06 245);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.85 0.02 80);
   --input: oklch(0.85 0.02 80);
-  --ring: oklch(0.78 0.14 195);
-  --chart-1: oklch(0.78 0.14 195);
+  --ring: oklch(0.84 0.18 155);
+  --chart-1: oklch(0.84 0.18 155);
   --chart-2: oklch(0.72 0.12 75);
   --chart-3: oklch(0.18 0.06 245);
   --chart-4: oklch(0.55 0.1 245);
   --chart-5: oklch(0.88 0.018 80);
   --sidebar: oklch(0.18 0.06 245);
   --sidebar-foreground: oklch(0.97 0.012 82);
-  --sidebar-primary: oklch(0.78 0.14 195);
+  --sidebar-primary: oklch(0.84 0.18 155);
   --sidebar-primary-foreground: oklch(0.18 0.06 245);
   --sidebar-accent: oklch(0.25 0.06 245);
   --sidebar-accent-foreground: oklch(0.97 0.012 82);
   --sidebar-border: oklch(0.28 0.06 245);
-  --sidebar-ring: oklch(0.78 0.14 195);
+  --sidebar-ring: oklch(0.84 0.18 155);
 }
 
 @layer base {

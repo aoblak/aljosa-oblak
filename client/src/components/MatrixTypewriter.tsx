@@ -173,11 +173,11 @@ export function MatrixTypewriter({ line1, line2, className = "", style }: Matrix
           <span
             key={i}
             style={{
-              color: c.resolved ? "#00ff41" : c.active ? "#a0ffa0" : "transparent",
+              color: c.resolved ? "#42F58D" : c.active ? "#a0ffa0" : "transparent",
               textShadow: c.resolved
-                ? "0 0 30px #00ff4180, 0 0 60px #00cc3340"
+                ? "0 0 30px #42F58D80, 0 0 60px #35cc7840"
                 : c.active
-                ? "0 0 12px #00ff4160"
+                ? "0 0 12px #42F58D60"
                 : "none",
               transition: c.resolved ? "text-shadow 0.3s ease" : "none",
               display: "inline-block",
@@ -194,8 +194,8 @@ export function MatrixTypewriter({ line1, line2, className = "", style }: Matrix
             style={{
               display: "inline-block",
               width: "0.55em",
-              background: "#00ff41",
-              boxShadow: "0 0 8px #00ff41",
+              background: "#42F58D",
+              boxShadow: "0 0 8px #42F58D",
               marginLeft: "2px",
               verticalAlign: "baseline",
               height: "0.85em",
@@ -213,14 +213,14 @@ export function MatrixTypewriter({ line1, line2, className = "", style }: Matrix
             key={i}
             style={{
               color: c.resolved
-                ? "#e0ffe0"
+                ? "#e8fff2"
                 : c.active
                 ? "#a0ffa0"
                 : "transparent",
               textShadow: c.resolved
-                ? "0 0 20px #00ff4199"
+                ? "0 0 20px #42F58D99"
                 : c.active
-                ? "0 0 10px #00ff4150"
+                ? "0 0 10px #42F58D50"
                 : "none",
               transition: c.resolved ? "text-shadow 0.3s ease" : "none",
               display: "inline-block",
@@ -237,8 +237,8 @@ export function MatrixTypewriter({ line1, line2, className = "", style }: Matrix
             style={{
               display: "inline-block",
               width: "0.55em",
-              background: "#00ff41",
-              boxShadow: "0 0 8px #00ff41",
+              background: "#42F58D",
+              boxShadow: "0 0 8px #42F58D",
               marginLeft: "2px",
               verticalAlign: "baseline",
               height: "0.85em",

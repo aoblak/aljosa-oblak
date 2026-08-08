@@ -65,19 +65,19 @@ export function MatrixRain({
 
         // Leading character — bright white/light-green flash
         if (drops[i] > 0) {
-          ctx.fillStyle = "#e0ffe0";
+          ctx.fillStyle = "#e8fff2";
           ctx.fillText(char, i * fontSize, y);
         }
 
         // Characters just behind the head — bright green
         if (drops[i] > 1) {
-          ctx.fillStyle = "#00ff41";
+          ctx.fillStyle = "#42F58D";
           const prevChar = CHARS[Math.floor(Math.random() * CHARS.length)];
           ctx.fillText(prevChar, i * fontSize, (drops[i] - 1) * fontSize);
         }
 
         // Rest of trail — medium green (handled by fade overlay)
-        ctx.fillStyle = "#00cc33";
+        ctx.fillStyle = "#35cc78";
         const trailChar = CHARS[Math.floor(Math.random() * CHARS.length)];
         if (drops[i] > 2) {
           ctx.fillText(trailChar, i * fontSize, (drops[i] - 2) * fontSize);

@@ -59,7 +59,7 @@ const JSONLD = {
       "@type": "Person",
       "@id": "https://aljosaoblak.com/#person",
       name: "Aljoša Oblak",
-      jobTitle: "Entrepreneur, Web & AI Developer",
+      jobTitle: "Technology Integrator, Founder of Cyber – Internet & Beyond",
       description:
         "Aljoša Oblak je poduzetnik i digitalni pionir iz Premanture, Istra. Osnivač Cyber Internet & Beyond u Puli, Web Development Agency Premantura za AI i web rješenja, te Dunja Apartments u Premanturi.",
       address: {
@@ -73,7 +73,13 @@ const JSONLD = {
       email: "aljosa@oblak.hr",
       telephone: "+385955186313",
       url: "https://aljosaoblak.com",
-      sameAs: ["https://www.facebook.com/cybercafepula/"],
+      sameAs: [
+        "https://hr.linkedin.com/in/aljosaoblak",
+        "https://www.facebook.com/aljosa.oblak.7/",
+        "https://www.facebook.com/cybercafepula/",
+        "https://www.instagram.com/aljosa.nebeski/",
+        "https://www.youtube.com/c/AljosaOblak",
+      ],
       knowsAbout: [
         "Web Development",
         "AI Solutions",
@@ -326,7 +332,7 @@ function HeroSection() {
         {/* LEFT — text */}
         <div>
           {/* Mono tag */}
-          <div className="mono-tag inline-block mb-6" style={{ color: "#00ff41", borderColor: "#00ff4140", background: "rgba(0,255,65,0.08)" }}>
+          <div className="mono-tag inline-block mb-6" style={{ color: "#42F58D", borderColor: "#42F58D40", background: "rgba(66,245,141,0.08)" }}>
             Premantura · Istra · Hrvatska
           </div>
 
@@ -349,10 +355,10 @@ function HeroSection() {
               fontSize: "clamp(1.1rem, 2.5vw, 1.6rem)",
               fontStyle: "italic",
               fontWeight: 400,
-              color: "#a0ffa0",
+              color: "#b0ffc8",
             }}
           >
-            Poduzetnik · Web &amp; AI Stručnjak · Digitalni Pionir
+            Technology Integrator · Founder, Cyber – Internet &amp; Beyond
           </p>
 
           <p
@@ -361,12 +367,12 @@ function HeroSection() {
               fontFamily: "var(--font-body)",
               fontSize: "1.05rem",
               lineHeight: 1.7,
-              color: "#66dd66",
+              color: "#7de8a8",
             }}
           >
-            Osnivač web &amp; AI agencije u Premanturi, kultnog Cyber Internet &amp; Beyond
-            cafea u Puli i Dunja Apartments uz more. Gradim digitalna rješenja
-            za Istru i šire — od ideje do objave.
+            Pretvaram AI i tehnologiju u pouzdane poslovne sustave.
+            Cyber – Internet &amp; Beyond je platforma kroz koju se ideje
+            dizajniraju, testiraju i isporučuju.
           </p>
 
           {/* CTA buttons */}
@@ -374,7 +380,7 @@ function HeroSection() {
             <a
               href="#projekti"
               className="inline-flex items-center gap-2 px-8 py-3.5 font-semibold text-sm tracking-widest uppercase transition-all hover:shadow-lg"
-              style={{ background: "#00ff41", color: "#000", boxShadow: "0 0 20px #00ff4140", fontFamily: "var(--font-body)" }}
+              style={{ background: "#42F58D", color: "#07090C", boxShadow: "0 0 20px #42F58D40", fontFamily: "var(--font-body)" }}
             >
               Moji projekti
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -384,7 +390,7 @@ function HeroSection() {
             <a
               href="#kontakt"
               className="inline-flex items-center gap-2 px-8 py-3.5 font-semibold text-sm tracking-widest uppercase transition-all"
-              style={{ border: "1px solid #00ff4166", color: "#00ff41", fontFamily: "var(--font-body)" }}
+              style={{ border: "1px solid #42F58D66", color: "#42F58D", fontFamily: "var(--font-body)" }}
             >
               Kontakt
             </a>
@@ -404,7 +410,7 @@ function HeroSection() {
             <div
               className="absolute inset-0 rounded-sm"
               style={{
-                boxShadow: "0 0 0 2px #00ff4166, 0 0 30px #00ff4133, 0 0 60px #00ff4120",
+                boxShadow: "0 0 0 2px #42F58D66, 0 0 30px #42F58D33, 0 0 60px #42F58D20",
                 zIndex: 2,
                 pointerEvents: "none",
               }}
@@ -414,29 +420,29 @@ function HeroSection() {
               className="absolute inset-0 rounded-sm pointer-events-none"
               style={{
                 background:
-                  "repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,255,65,0.04) 3px, rgba(0,255,65,0.04) 4px)",
+                  "repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(66,245,141,0.04) 3px, rgba(66,245,141,0.04) 4px)",
                 zIndex: 3,
               }}
             />
             {/* Corner brackets — top-left */}
             <div className="absolute top-0 left-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
-              <div className="absolute top-0 left-0 w-full h-0.5 bg-[#00ff41]" />
-              <div className="absolute top-0 left-0 w-0.5 h-full bg-[#00ff41]" />
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-[#42F58D]" />
+              <div className="absolute top-0 left-0 w-0.5 h-full bg-[#42F58D]" />
             </div>
             {/* Corner brackets — top-right */}
             <div className="absolute top-0 right-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
-              <div className="absolute top-0 right-0 w-full h-0.5 bg-[#00ff41]" />
-              <div className="absolute top-0 right-0 w-0.5 h-full bg-[#00ff41]" />
+              <div className="absolute top-0 right-0 w-full h-0.5 bg-[#42F58D]" />
+              <div className="absolute top-0 right-0 w-0.5 h-full bg-[#42F58D]" />
             </div>
             {/* Corner brackets — bottom-left */}
             <div className="absolute bottom-0 left-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
-              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00ff41]" />
-              <div className="absolute bottom-0 left-0 w-0.5 h-full bg-[#00ff41]" />
+              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#42F58D]" />
+              <div className="absolute bottom-0 left-0 w-0.5 h-full bg-[#42F58D]" />
             </div>
             {/* Corner brackets — bottom-right */}
             <div className="absolute bottom-0 right-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
-              <div className="absolute bottom-0 right-0 w-full h-0.5 bg-[#00ff41]" />
-              <div className="absolute bottom-0 right-0 w-0.5 h-full bg-[#00ff41]" />
+              <div className="absolute bottom-0 right-0 w-full h-0.5 bg-[#42F58D]" />
+              <div className="absolute bottom-0 right-0 w-0.5 h-full bg-[#42F58D]" />
             </div>
             {/* Photo */}
             <img
@@ -456,7 +462,7 @@ function HeroSection() {
               style={{
                 fontFamily: "var(--font-mono)",
                 fontSize: "0.65rem",
-                color: "#00ff4199",
+                color: "#42F58D99",
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
               }}
@@ -469,9 +475,9 @@ function HeroSection() {
         </div>{/* end grid */}
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-2" style={{ color: "#00ff4166" }}>
+        <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-2" style={{ color: "#42F58D66" }}>
           <span className="mono-tag text-[0.6rem]">Scroll</span>
-          <div className="w-px h-12 animate-pulse" style={{ background: "#00ff4140" }} />
+          <div className="w-px h-12 animate-pulse" style={{ background: "#42F58D40" }} />
         </div>
       </div>
     </section>
@@ -495,8 +501,8 @@ function AboutSection() {
               <span className="mono-tag">O meni</span>
             </div>
             <p className="text-[oklch(0.45_0.04_245)] text-sm leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-              Poduzetnik s korijenima u Premanturi, Istra. Digitalni pionir koji
-              je donio internet u Pulu na prijelazu tisućljeća.
+              Gradim praktične sustave na sjecištu tehnologije, operacija
+              i ljudskog iskustva. Cyber – Internet &amp; Beyond je platforma.
             </p>
           </div>
 
@@ -507,7 +513,7 @@ function AboutSection() {
               className="font-display text-[oklch(0.18_0.06_245)] mb-6 reveal"
               style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: 700 }}
             >
-              Digitalni pionir iz srca Istre
+              Technology Integrator &amp; Entrepreneurial Operator
             </h2>
 
             <div
@@ -515,24 +521,25 @@ function AboutSection() {
               style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", lineHeight: 1.8 }}
             >
               <p>
-                <strong>Aljoša Oblak</strong> je poduzetnik, web developer i digitalni vizionar
-                iz Premanture (Brig 11, 52203 Medulin), Istra, Hrvatska. Njegova karijera
-                obuhvaća više od dva desetljeća rada na sjecištu tehnologije, turizma i
-                lokalnog poduzetništva.
+                <strong>Aljoša Oblak</strong> gradi praktične sustave gdje se tehnologija,
+                operacije i ljudsko iskustvo susreću. Kao osnivač{" "}
+                <strong>Cyber – Internet &amp; Beyond</strong>, radi na implementaciji AI-a,
+                sistemskoj integraciji, poslovnoj automatizaciji, tehnologiji ugostiteljstva
+                i razvoju novih proizvoda.
               </p>
               <p>
-                Na bivšoj adresi <strong>Flanatička 14, 52100 Pula</strong>, Aljoša je vodio
-                kultni <strong>Cyber Internet &amp; Beyond</strong> — jedan od prvih i
-                najdugovječnijih internet cafea u Istri, otvoren 2000. godine. Taj prostor
-                postao je ikonično sastajalište digitalne kulture Pule, omiljeno mjesto
-                generacija Puljana koji su tamo prvi put dodirnuli internet.
+                Njegova pozadina kombinira poduzetništvo s praktičnom tehnologijom: Linux i
+                sistemska administracija, web platforme, digitalni tijekovi rada, automatizacija
+                i operacije okrenute korisnicima. Perspektiva je istovremeno strateška i praktična —
+                rješenje nije uspješno jer izgleda impresivno u demonstraciji, već kada radi
+                pouzdano, ima jasnog vlasnika i proizvodi mjerljivu vrijednost.
               </p>
               <p>
-                Danas iz Premanture vodi <strong>Web Development Agency Premantura</strong> —
-                agenciju specijaliziranu za izradu modernih web stranica i AI rješenja za
-                poduzetnike u Istri, Medulinu i šire. Paralelno, na adresi Brig 11 u
-                Premanturi, gostima nudi autentičan boravak uz more kroz{" "}
-                <strong>Dunja Apartments</strong> — apart house s direktnim pristupom plaži.
+                Trenutna područja fokusa: praktični AI i automatizacija za poduzeća,
+                digitalna sistemska integracija, tehnologija ugostiteljstva kroz{" "}
+                <strong>Dunja Residence</strong>, Linux i web infrastruktura te upravljanje
+                programima i validacija novih koncepata. Tehnologija treba jačati ljudske
+                sposobnosti — ne reducirati ljude na komponente u tijeku rada.
               </p>
             </div>
 
@@ -734,36 +741,37 @@ function ProjectsSection() {
 
 // ── Services / Skills Section ──────────────────────────────────────────────
 function ServicesSection() {
+  // Six strategic pillars from brand strategy document
   const services = [
     {
-      icon: "⚡",
-      title: "Izrada web stranica Istra",
-      desc: "Brze, moderne i SEO-optimizirane web stranice za poduzetnike u Premanturi, Medulinu, Puli i cijeloj Istri.",
-    },
-    {
       icon: "🤖",
-      title: "AI web rješenja",
-      desc: "Integracija umjetne inteligencije u web projekte — chatboti, automatizacija, personalizacija i analitika.",
+      title: "Praktična implementacija AI-a",
+      desc: "Primjena AI-a na definirane procese, odluke i korisničke tijekove — ne apstraktna 'AI transformacija', već strukturirani program koji ljudi mogu stvarno koristiti.",
     },
     {
-      icon: "📱",
-      title: "Responzivni dizajn",
-      desc: "Savršen prikaz na svim uređajima — desktop, tablet i mobitel. Mobile-first pristup razvoju.",
+      icon: "⚙️",
+      title: "Sistemska integracija",
+      desc: "Povezivanje infrastrukture, web sustava, automatizacije, podataka i ljudskih odgovornosti. Manje nepovezanih alata, jasnije vlasništvo, pouzdanije operacije.",
     },
     {
-      icon: "🔍",
-      title: "SEO & AIO optimizacija",
-      desc: "Optimizacija za tražilice i AI Overview. Ciljane ključne riječi s niskom konkurencijom za lokalna tržišta.",
+      icon: "🏨",
+      title: "Tehnologija ugostiteljstva",
+      desc: "Tretiranje smještaja kao mjerljivog operativnog sustava: konzistentni podaci kanala, brža komunikacija s gostima, direktna rezervacija i vidljivost prihoda.",
     },
     {
-      icon: "🏠",
-      title: "Web za turizam i apartmane",
-      desc: "Specijalizirani sustavi za direktnu rezervaciju apartmana i turističkih smještaja u Istri.",
+      icon: "🗺️",
+      title: "Upravljanje programima",
+      desc: "Od koncepta kroz zahtjeve, partnere, testiranje, rizike i isporuku. Smanjenje nejasnoća u projektu i rano prepoznavanje skupih grešaka.",
     },
     {
-      icon: "🌐",
-      title: "Digitalni marketing",
-      desc: "Strategija prisutnosti na internetu, upravljanje sadržajem i izgradnja digitalnog brenda.",
+      icon: "🌊",
+      title: "Jadransko dokazno polje",
+      desc: "Gradnja iz Istre uz rješavanje međunarodno relevantnih problema — turizam, morska inovacija i lokalni SME ekosustav kao autentičan i distinktivan kontekst.",
+    },
+    {
+      icon: "🔒",
+      title: "Tehnologija usmjerena na čovjeka",
+      desc: "Dizajn za jasnoću, odgovornost, privatnost i sigurnost od samog početka. Tehnologija treba povećati ljudske sposobnosti — ne stvoriti složenost radi sebe.",
     },
   ];
 
@@ -781,14 +789,14 @@ function ServicesSection() {
             className="font-display text-white"
             style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: 700 }}
           >
-            Usluge &amp; Stručnost
+            Strateški stupovi
           </h2>
           <p
             className="text-[oklch(0.68_0.04_245)] mt-4 max-w-xl mx-auto"
             style={{ fontFamily: "var(--font-body)", lineHeight: 1.7 }}
           >
-            Web agencija Premantura — izrada web stranica i AI rješenja za
-            poduzetnike u Istri i šire.
+            Cyber – Internet &amp; Beyond: platforma za AI implementaciju, sistemsku
+            integraciju, tehnologiju ugostiteljstva i razvoj novih programa.
           </p>
         </div>
 
@@ -835,15 +843,15 @@ function CTASection() {
             className="font-display text-[oklch(0.18_0.06_245)] mb-6"
             style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 900 }}
           >
-            Trebate web stranicu ili AI rješenje za vaše poduzeće u Istri?
+            Od složenosti do funkcionalnih sustava — zajedno.
           </h2>
           <p
             className="text-[oklch(0.38_0.04_245)] mb-10 max-w-xl mx-auto"
             style={{ fontFamily: "var(--font-body)", fontSize: "1.1rem", lineHeight: 1.8 }}
           >
-            Web Development Agency Premantura nudi izradu modernih web stranica,
-            AI integracije i digitalni marketing za poduzetnike u Medulinu, Puli,
-            Istri i šire. Kontaktirajte me za besplatnu konzultaciju.
+            Pomažem vlasnicima poduzeća pretvoriti složenu tehnologiju u pouzdane
+            operativne sustave. Kontaktirajte me za AI &amp; sistemsku dijagnostiku —
+            besplatnu uvodnu konzultaciju.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
@@ -851,7 +859,7 @@ function CTASection() {
               className="inline-flex items-center gap-2 px-10 py-4 bg-[oklch(0.18_0.06_245)] text-[oklch(0.97_0.012_82)] font-semibold text-sm tracking-widest uppercase btn-sweep transition-all hover:shadow-xl"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Besplatna konzultacija
+              AI &amp; Sistemska dijagnostika
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -1227,8 +1235,8 @@ function Footer() {
               className="text-sm leading-relaxed max-w-xs"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Poduzetnik, web &amp; AI developer i digitalni pionir iz Premanture,
-              Istra, Hrvatska.
+              Technology Integrator &amp; Founder, Cyber – Internet &amp; Beyond.
+              Gradim praktične sustave na sjecištu tehnologije i operacija.
             </p>
             <address className="not-italic mt-4 text-sm" style={{ fontFamily: "var(--font-body)" }}>
               <div>Brig 11, Premantura, 52203 Medulin</div>
@@ -1288,7 +1296,7 @@ function Footer() {
             © {new Date().getFullYear()} Aljoša Oblak · Premantura, Istra, Hrvatska
           </p>
           <p className="text-xs" style={{ fontFamily: "var(--font-mono)" }}>
-            Web Development Agency Premantura · Izrada web stranica Istra
+            From complexity to working systems. Go &amp; Beyond.
           </p>
         </div>
       </div>
