@@ -303,11 +303,13 @@ function Navbar() {
 
 // ── Hero Section ───────────────────────────────────────────────────────────
 function HeroSection() {
+  const IMG_PROFILE = "/manus-storage/aljosa-profile_9a886bd1.jpg";
+
   return (
     <section
       id="vrh"
       aria-label="Hero — Aljoša Oblak, poduzetnik i digitalni pionir"
-      className="relative min-h-screen flex items-end pb-24 overflow-hidden clip-diagonal-bottom"
+      className="relative min-h-screen flex items-center pb-24 pt-24 overflow-hidden clip-diagonal-bottom"
       style={{ background: "#000000" }}
     >
       {/* Matrix Rain background */}
@@ -319,7 +321,10 @@ function HeroSection() {
 
       {/* Content */}
       <div className="container relative z-10">
-        <div className="max-w-3xl">
+        <div className="grid md:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
+
+        {/* LEFT — text */}
+        <div>
           {/* Mono tag */}
           <div className="mono-tag inline-block mb-6" style={{ color: "#00ff41", borderColor: "#00ff4140", background: "rgba(0,255,65,0.08)" }}>
             Premantura · Istra · Hrvatska
@@ -385,6 +390,83 @@ function HeroSection() {
             </a>
           </div>
         </div>
+
+        {/* RIGHT — profile photo */}
+        <div className="hidden md:flex justify-center items-center">
+          <div
+            className="relative"
+            style={{
+              width: "clamp(220px, 22vw, 340px)",
+              flexShrink: 0,
+            }}
+          >
+            {/* Outer glow ring */}
+            <div
+              className="absolute inset-0 rounded-sm"
+              style={{
+                boxShadow: "0 0 0 2px #00ff4166, 0 0 30px #00ff4133, 0 0 60px #00ff4120",
+                zIndex: 2,
+                pointerEvents: "none",
+              }}
+            />
+            {/* Scanline overlay */}
+            <div
+              className="absolute inset-0 rounded-sm pointer-events-none"
+              style={{
+                background:
+                  "repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,255,65,0.04) 3px, rgba(0,255,65,0.04) 4px)",
+                zIndex: 3,
+              }}
+            />
+            {/* Corner brackets — top-left */}
+            <div className="absolute top-0 left-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-[#00ff41]" />
+              <div className="absolute top-0 left-0 w-0.5 h-full bg-[#00ff41]" />
+            </div>
+            {/* Corner brackets — top-right */}
+            <div className="absolute top-0 right-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
+              <div className="absolute top-0 right-0 w-full h-0.5 bg-[#00ff41]" />
+              <div className="absolute top-0 right-0 w-0.5 h-full bg-[#00ff41]" />
+            </div>
+            {/* Corner brackets — bottom-left */}
+            <div className="absolute bottom-0 left-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
+              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00ff41]" />
+              <div className="absolute bottom-0 left-0 w-0.5 h-full bg-[#00ff41]" />
+            </div>
+            {/* Corner brackets — bottom-right */}
+            <div className="absolute bottom-0 right-0 w-6 h-6 pointer-events-none" style={{ zIndex: 4 }}>
+              <div className="absolute bottom-0 right-0 w-full h-0.5 bg-[#00ff41]" />
+              <div className="absolute bottom-0 right-0 w-0.5 h-full bg-[#00ff41]" />
+            </div>
+            {/* Photo */}
+            <img
+              src={IMG_PROFILE}
+              alt="Aljoša Oblak — poduzetnik i digitalni pionir, Premantura, Istra"
+              className="w-full block rounded-sm"
+              style={{
+                filter: "contrast(1.05) brightness(0.92)",
+                position: "relative",
+                zIndex: 1,
+              }}
+              loading="eager"
+            />
+            {/* ID tag below photo */}
+            <div
+              className="mt-2 text-center"
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.65rem",
+                color: "#00ff4199",
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+              }}
+            >
+              [ ALJOSA_OBLAK · PREMANTURA · HR ]
+            </div>
+          </div>
+        </div>
+
+        </div>{/* end grid */}
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-2" style={{ color: "#00ff4166" }}>
