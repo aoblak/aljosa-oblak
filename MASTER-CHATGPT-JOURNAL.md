@@ -217,3 +217,11 @@ Development conversations are reusable intellectual assets. Qualifying discussio
 This journal remains a reconstructed baseline from recoverable conversation context and persistent artifacts, not a guaranteed verbatim export of every historical conversation. Future versions should ingest more recoverable history, attach stronger source references, assign stable knowledge-object IDs and link decisions to implementation/release evidence.
 
 **End of v0.1.5**
+
+## 2026-09-08 — OOS Context Protocol v0.1: indexed handoff implementation
+
+Actor: Codex. Recorded at: 2026-09-08T15:48:11+00:00.
+
+Added a reusable repository-local context package with AGENTS.md, governed state/journal entry paths, a JSON index, SHA-256 integrity checks and bounded journal topic selection. Definitions follow the accepted OOS governance glossary, including GS = Git State. This supplements the existing canonical baseline; it does not reconstruct missing historical sessions.
+
+Verification: 16 regression checks passed. This entry records the prepared/verified implementation; repository adoption must be checked against Git branch/merge state. No ChatGPT-to-iCloud sync is asserted. Rollback: revert this context integration while retaining earlier journal history.
