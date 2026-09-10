@@ -35,9 +35,6 @@ This repository: the TypeScript/React implementation of my public site, includin
 - JSON-LD structured data
 - sitemap, robots and social metadata
 - Croatian/English search and entity-oriented content work
-- Vercel deployment
-
-Live deployment: [aljosaoblak.vercel.app](https://aljosaoblak.vercel.app)
 
 ## Development
 
