@@ -1,86 +1,54 @@
-# Aljoša Oblak — Personal & Business Website
+# Aljoša Oblak — Public Portfolio Site
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)](https://aljosaoblak.vercel.app)
+This repository contains the source for my public personal/business website and a compact entry point to selected software work.
 
-Professional one-page website for **Aljoša Oblak** — entrepreneur, web & AI developer, and digital pioneer from Premantura, Istria, Croatia.
+> **GitHub profile note:** this is a normal project repository. GitHub's special profile README requires a public repository named exactly `aoblak/aoblak`; this repository does not replace it.
 
-## About
+## What I build
 
-This site covers three business ventures:
+My current public work is concentrated around three areas:
 
-| Venture | Location | Description |
-|---|---|---|
-| **Cyber Internet & Beyond** | Flanatička 14, Pula | Iconic internet cafe, est. 2000 |
-| **Web Development Agency Premantura** | Brig 11, Premantura | Web & AI solutions for Istria |
-| **Dunja Apartments** | Brig 11, Premantura | Beachfront holiday apartments |
+- **AI agents and automation** — practical agent workflows, controlled tool use, verification and operational reliability.
+- **Web products and discovery systems** — TypeScript/React applications, static web surfaces, SEO/AIO, structured data and measurable UX.
+- **Systems engineering** — Linux-oriented automation, integration design, security boundaries and business-process tooling.
 
-**Address:** Brig 11, Premantura, 52203 Medulin, Istra, Croatia  
-**Phone:** +385 95 518 6313  
-**Email:** aljosa@oblak.hr
+The public portfolio intentionally shows only material that is appropriate for open GitHub. Private repositories, customer information, credentials and internal operational details stay private.
 
----
+## Selected public projects
 
-## Tech Stack
+### [The Dog Park Finder](https://github.com/aoblak/thedogparkfinder)
+A lightweight HTML/CSS/JavaScript dog-park discovery surface used as a controlled benchmark and integration test-bed. Its public documentation includes a least-privilege, read-only integration model and explicit separation between browser code and privileged services.
 
-- **Framework:** React 19 + TypeScript
-- **Styling:** Tailwind CSS 4 + custom design tokens
-- **Fonts:** Playfair Display · DM Sans · JetBrains Mono
-- **Maps:** Google Maps (via Manus proxy)
-- **Build:** Vite 7
-- **Deploy:** Vercel
+### [ai-agent-web](https://github.com/aoblak/ai-agent-web)
+An experimental public repository for web-connected AI-agent work. The repository currently contains documentation, tests and automation scaffolding and is being treated as an engineering workbench rather than a finished product.
 
-## SEO & AIO Strategy
+### [aljosa-oblak](https://github.com/aoblak/aljosa-oblak)
+This repository: the TypeScript/React implementation of my public site, including technical SEO/AIO and structured-data work.
 
-- **Target keywords:** `izrada web stranica Premantura`, `web agencija Istra`, `AI web rješenja Istra`, `Cyber Internet Beyond Pula`, `Dunja Apartments Premantura direktna rezervacija`
-- **Structured data:** JSON-LD — Person + 3× LocalBusiness + FAQPage
-- **AIO (AI Overview):** FAQ schema, entity-rich content, robots.txt with AI crawler permissions
-- **Technical:** sitemap.xml, robots.txt, OG/Twitter meta, hreflang hr/en, geo meta
+**Attribution rule:** the projects above are repositories reported by GitHub as original repositories under this account. Public forks and training/template repositories are deliberately not presented here as authored products.
 
-## Design Philosophy
+## This site's technical baseline
 
-**Mediterranean Brutalism meets Digital Craft** — Istrian limestone coast aesthetics fused with sharp digital geometry.
-
-- Limestone off-white background (`oklch(0.97 0.012 82)`)
-- Adriatic navy text (`oklch(0.18 0.06 245)`)
-- Electric cyan accents (`oklch(0.78 0.14 195)`)
-- Sunset gold ornaments (`oklch(0.72 0.12 75)`)
-- Diagonal clip-path section dividers
-- Scroll-reveal animations
+- React 19 + TypeScript
+- Tailwind CSS 4
+- Vite 7
+- JSON-LD structured data
+- sitemap, robots and social metadata
+- Croatian/English search and entity-oriented content work
 
 ## Development
 
 ```bash
-# Install dependencies
 pnpm install
-
-# Start dev server
 pnpm dev
-
-# Build for production
 pnpm build
-
-# Preview production build
 pnpm preview
 ```
 
-## Deployment (Vercel)
+## Repository scope
 
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel --prod
-```
-
-Or connect the GitHub repository to Vercel for automatic deployments on push.
-
-## Branch Strategy
-
-- `main` — production-ready code
-- `develop` — integration branch
-- `feature/*` — individual features
+This repository is for the public website and its supporting code. It is not the source of truth for private AI/system architecture, credentials, customer records, production secrets or unrelated business operations.
 
 ## License
 
-© 2026 Aljoša Oblak. All rights reserved.
+Unless a file states otherwise, the website content and bespoke design remain © 2026 Aljoša Oblak. Third-party dependencies retain their respective licenses.
