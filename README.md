@@ -63,3 +63,8 @@ This repository is for the public website and its supporting code. It is not the
 ## License
 
 Unless a file states otherwise, the website content and bespoke design remain © 2026 Aljoša Oblak. Third-party dependencies retain their respective licenses.
+
+
+## OOS public-safe brief
+
+- [OOS External Brief](docs/oos/OOS-EXTERNAL-BRIEF.md) — a concise public-safe explanation of OOS, Git-backed agent orchestration, human authority, and evidence-first execution.
