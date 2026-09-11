@@ -1,5 +1,16 @@
 # Aljoša Oblak — Public Portfolio Site
 
+## Professional positioning
+
+**Entrepreneur · AI Systems Orchestrator · Product & Business Architect**  
+**2025–present**
+
+Conceived and directed the development of AI-agent systems evolving into a broader AI operating-system architecture for real-world business and life management. Defines product vision, system requirements and decision frameworks, while orchestrating AI agents and tools across research, planning, execution, verification, continuous improvement and monetization.
+
+**Key areas:** AI agents · multi-agent orchestration · Second Brain · persistent context · decision systems · governed AI execution · business automation · product strategy · real-world AI validation.
+
+**Provenance:** This positioning describes entrepreneurial/product direction and orchestration. It does not claim traditional software-developer authorship. The 2025 start is supported by public AI-agent repository activity; individual capability claims should remain tied to dated evidence.
+
 This repository contains the source for my public personal/business website and a compact entry point to selected software work.
 
 > **GitHub profile note:** this is a normal project repository. GitHub's special profile README requires a public repository named exactly `aoblak/aoblak`; this repository does not replace it.
