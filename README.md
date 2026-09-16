@@ -38,7 +38,6 @@ This repository contains the public website and portfolio source. Private client
 
 ## Contact
 
-- Location: Pula / Premantura, Croatia
-- Website: [aljosaoblak.com](https://aljosaoblak.com)
+Pula / Premantura, Croatia
 
 © 2026 Aljoša Oblak
