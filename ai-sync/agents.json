@@ -6,7 +6,10 @@
       "provider": "OpenAI",
       "agent": "ChatGPT",
       "connection_from_current_chat": "DIRECT",
-      "receipt_status": "PENDING_RECORDED_RECEIPT"
+      "receipt_status": "RECORDED",
+      "receipt_ref": "ai-sync/receipts/openai-chatgpt-gpt-5.6-sol-2026-09-25.json",
+      "alignment": "CONCERN",
+      "sync_ref": "aoblak/aljosa-oblak@89691b11ebb698da3ce6599bd87c439d9148041c"
     },
     {
       "provider": "Manus",
