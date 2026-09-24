@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1",
+  "distribution": "public_free",
+  "purpose": "Share simple prompts as reusable lead magnets.",
+  "prompts": [
+    {
+      "id": "low-cost-agent-task",
+      "version": "0.1.0",
+      "path": "prompts/low-cost-agent-task.md",
+      "license_intent": "free_to_use_and_share",
+      "role": "lead_magnet",
+      "related_skill": {
+        "id": "lcps",
+        "payload_public": false
+      }
+    }
+  ]
+}
