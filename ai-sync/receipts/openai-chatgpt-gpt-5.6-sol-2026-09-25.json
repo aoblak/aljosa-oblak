@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1",
+  "agent": {
+    "provider": "OpenAI",
+    "model_or_agent": "GPT-5.6 Sol",
+    "session_id": null
+  },
+  "sync_ref": "aoblak/aljosa-oblak@89691b11ebb698da3ce6599bd87c439d9148041c",
+  "understood": "Prompts are lightweight public/shareable lead magnets; skills are structured, versioned and testable capability packages that may be commercialized. Prompt Factory creates and tracks prompts; Skill Factory promotes proven prompts/workflows into skills. Git is the shared public-safe synchronization source and these capabilities do not create a new OOS core.",
+  "alignment": "CONCERN",
+  "concerns": [
+    "Private skill payload distribution and installation are not implemented yet; the current public skills catalog exposes metadata only."
+  ],
+  "compatibility": {
+    "public_git_read": "YES",
+    "private_git_read": "YES",
+    "artifact_by_id_version": "YES"
+  },
+  "writeback": "DIRECT_GIT",
+  "cost_control": "Use scope-first retrieval, metadata/index filtering, targeted reads, reuse prior evidence, and stop once required evidence is sufficient.",
+  "proposed_change": "Require immutable release ref/hash metadata before a prompt or skill can move to published status.",
+  "timestamp": "2026-09-25"
+}

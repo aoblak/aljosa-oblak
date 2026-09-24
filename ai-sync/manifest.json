@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1",
+  "status": "public-safe-working",
+  "canonical_sync_file": "ai-sync/AI_SYNC.md",
+  "concepts": {
+    "prompt_factory": {
+      "type": "capability",
+      "purpose": "create and improve simple shareable prompts"
+    },
+    "prompt_registry": {
+      "type": "registry",
+      "purpose": "track prompt identity, version, provenance, intended use and evidence"
+    },
+    "skill_factory": {
+      "type": "capability",
+      "purpose": "promote proven prompt/workflow behavior into structured operational skills"
+    },
+    "skill_registry": {
+      "type": "registry",
+      "purpose": "track skill versions, provenance, compatibility, tests and distribution"
+    }
+  },
+  "commercial_model": {
+    "prompts": "shared/free/lead-magnet",
+    "skills": "structured capability/commercializable"
+  },
+  "distribution": {
+    "source": "git",
+    "manual_copy_paste_required": false
+  },
+  "cost_default": "SCOPE -> INDEX -> FILTER -> TARGETED READ -> STOP WHEN SUFFICIENT"
+}

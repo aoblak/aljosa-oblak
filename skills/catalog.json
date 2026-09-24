@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1",
+  "catalog_type": "public_metadata_only",
+  "rule": "A catalog entry does not expose or grant access to the skill payload.",
+  "skills": [
+    {
+      "id": "lcps",
+      "name": "Low-Cost Prompting Skill",
+      "version": "0.1.0",
+      "purpose": "Optimize metered agent execution cost while preserving required evidence and output quality.",
+      "origin_prompt": "low-cost-agent-task",
+      "payload_public": false,
+      "status": "candidate"
+    },
+    {
+      "id": "chat-project-consolidation",
+      "name": "Chat / Project Consolidation Skill",
+      "version": "0.1.0",
+      "purpose": "Inventory, rename and map conversation histories into canonical projects using metadata-first classification.",
+      "payload_public": false,
+      "status": "candidate"
+    }
+  ]
+}
