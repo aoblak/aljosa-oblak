@@ -18,13 +18,24 @@ My background spans more than three decades of hands-on work with computer syste
 - **Hospitality and local services** — booking, customer communication, pricing, lead handling and local-service workflows
 - **Applied product development** — rapid validation, prototypes and systems designed around actual operator needs
 
+## Selected public work
+
+### [state-transition-engine](https://github.com/aoblak/state-transition-engine)
+A small, domain-neutral TypeScript engine for explicit state transitions, invariants, deterministic rule selection and auditable outcomes.
+
+### [The Dog Park Finder](https://github.com/aoblak/thedogparkfinder)
+A lightweight location-discovery product used to test structured data, search, mobile usability, performance and integration decisions.
+
+### [AI Agent Web](https://github.com/aoblak/ai-agent-web)
+A public-safe package for reusable AI operating rules and runtime bootstrap patterns across multiple assistant environments.
+
 ## Current focus
 
 ### Governed AI systems
 
 I am developing systems that treat AI as an execution component inside a controlled operating model rather than as an autonomous source of truth.
 
-The core principles are:
+The operating principle is:
 
 `STOP → THINK → VERIFY → ACT → VERIFY → RECORD → STOP`
 
@@ -37,23 +48,6 @@ Current work includes AI-assisted booking, lead, customer-service and operations
 ### Location and discovery products
 
 I also build structured location-based products combining search, maps, business data and practical user workflows.
-
-## Selected public repositories
-
-### [state-transition-engine](https://github.com/aoblak/state-transition-engine)
-State-oriented execution and transition work for systems that need explicit, inspectable workflow state.
-
-### [The Dog Park Finder](https://github.com/aoblak/thedogparkfinder)
-A location-discovery product and practical test bed for structured data, search, maps, performance and integrations.
-
-### [Turbo AI Agent](https://github.com/aoblak/Turbo-AI-Agent)
-Experimental work around AI-agent execution and application integration.
-
-### [AI Agent Web](https://github.com/aoblak/ai-agent-web)
-Web-oriented AI-agent experiments and application patterns.
-
-### [aljosa-oblak](https://github.com/aoblak/aljosa-oblak)
-Public portfolio and personal project repository.
 
 ## How I work
 
