@@ -1,43 +1,87 @@
 # Aljoša Oblak
 
-Business owner and problem solver based in Pula, Croatia.
+**Systems builder · Business owner · Problem solver**  
+Premantura / Pula, Croatia
 
-I work where business operations, technology and product development meet. Most of my projects start with a real operational problem: a process is slow, fragmented, difficult to verify or dependent on too much manual work. I map the problem, simplify the workflow and build or coordinate a practical solution.
+I build practical systems where **business operations, software, automation and AI** meet.
+
+My work usually starts with a real operational problem: fragmented workflows, repetitive manual work, weak verification, poor handoffs between people and software, or systems that are difficult to maintain. I reduce that complexity into a workflow that can be **tested, operated and improved**.
+
+My background spans more than three decades of hands-on work with computer systems, business operations, tourism and hospitality, web products, infrastructure and automation.
 
 ## What I work on
 
-- business-process and product design
-- web applications and automation
-- Linux systems and integrations
-- AI-assisted workflows with human approval and audit trails
-- tourism, hospitality and location-based products
+- **AI agents and governed automation** — multi-agent workflows, approval boundaries, auditability, state and memory
+- **Business systems** — turning operational problems into repeatable processes and software
+- **Web products and integrations** — APIs, WordPress, web applications and service orchestration
+- **Infrastructure** — Linux, macOS/Unix, Windows, virtualization and deployment
+- **Hospitality and local services** — booking, customer communication, pricing, lead handling and local-service workflows
+- **Applied product development** — rapid validation, prototypes and systems designed around actual operator needs
 
-I use AI as a tool, not as a substitute for judgment. Claims should be tied to working code, documented decisions or measurable results.
+## Current focus
 
-## Selected public work
+### Governed AI systems
 
-### [Aljoša Oblak](https://github.com/aoblak/aljosa-oblak)
+I am developing systems that treat AI as an execution component inside a controlled operating model rather than as an autonomous source of truth.
 
-The source for my personal website and public portfolio.
+The core principles are:
+
+`STOP → THINK → VERIFY → ACT → VERIFY → RECORD → STOP`
+
+That means explicit state, provenance, human approval for consequential actions, independent verification and recoverable history.
+
+### Agent and workflow products
+
+Current work includes AI-assisted booking, lead, customer-service and operations workflows for small businesses and hospitality operators.
+
+### Location and discovery products
+
+I also build structured location-based products combining search, maps, business data and practical user workflows.
+
+## Selected public repositories
+
+### [state-transition-engine](https://github.com/aoblak/state-transition-engine)
+State-oriented execution and transition work for systems that need explicit, inspectable workflow state.
 
 ### [The Dog Park Finder](https://github.com/aoblak/thedogparkfinder)
+A location-discovery product and practical test bed for structured data, search, maps, performance and integrations.
 
-A lightweight dog-park discovery project and a practical test bed for search, structured data, performance and safe integrations.
+### [Turbo AI Agent](https://github.com/aoblak/Turbo-AI-Agent)
+Experimental work around AI-agent execution and application integration.
+
+### [AI Agent Web](https://github.com/aoblak/ai-agent-web)
+Web-oriented AI-agent experiments and application patterns.
+
+### [aljosa-oblak](https://github.com/aoblak/aljosa-oblak)
+Public portfolio and personal project repository.
 
 ## How I work
 
-1. Start from the real problem.
-2. Separate confirmed facts from assumptions.
-3. Keep the human responsible for consequential decisions.
-4. Prefer the simplest system that can be tested and maintained.
-5. Document what changed, why it changed and how it was verified.
+1. **Start with the real problem.** Technology is not the objective.
+2. **Separate facts from assumptions.** Unknowns remain unknown until verified.
+3. **Prefer simple systems with explicit state.**
+4. **Keep consequential decisions under human control.**
+5. **Verify execution, not just intent.**
+6. **Preserve provenance and recoverability.**
+7. **Measure closure.** A task is not finished because somebody said it was finished.
 
-## About this repository
+## Technology
 
-This repository contains the public website and portfolio source. Private client data, credentials, internal business records and unfinished experimental systems do not belong here.
+Typical environments and tools include:
+
+`Linux` · `macOS / Unix` · `Windows` · `Git / GitHub` · `Python` · `Node.js` · `PHP` · `WordPress` · `REST APIs` · `Docker` · `Proxmox` · `n8n` · browser automation · AI model APIs
+
+I am model-agnostic by design: systems should remain usable when models, vendors or interfaces change.
+
+## Working principle
+
+> If an AI system has to be reminded of the same operating rules every time, the problem is probably not the prompt. The system is missing architecture.
+
+AI is useful when it increases capability **without removing accountability**.
 
 ## Contact
 
-Pula / Premantura, Croatia
+**Aljoša Oblak**  
+Premantura / Pula, Croatia
 
-© 2026 Aljoša Oblak
+GitHub: [@aoblak](https://github.com/aoblak)
