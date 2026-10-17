@@ -48,12 +48,12 @@
     {
       "path": "docs/PROJECT_STATE.md",
       "visibility": "PUBLIC",
-      "sha256": "c9a5f8f53826915b3ef3bf65bc397524a7e1106dc9ebf62fb457cb846b7494c5"
+      "sha256": "4f8821d1c1a3548cbc9a0360b8daf72dbd9d738c19009362ab7d38bcf179b662"
     },
     {
       "path": "docs/MASTER_JOURNAL.md",
       "visibility": "PUBLIC",
-      "sha256": "ff6e5dea704438b32d23c548ac721ae29e73302fb1ef58aaa6b8cc593fecaf1b"
+      "sha256": "348808895b12840f1e45ec7373befdfbc23288e1a06a8abfd14baba40ed1cee8"
     },
     {
       "path": "scripts/oos_context.py",
@@ -73,7 +73,7 @@
     {
       "path": "MASTER-CHATGPT-JOURNAL.md",
       "visibility": "PUBLIC",
-      "sha256": "b91a7b59a98fd842228a576899499b375cdf5ff6ae43d88a38ff851cf3130702"
+      "sha256": "15cb13c11f4dba32561c4be1731a92dde3735bc052dd8d507b9dbcf6e0903e88"
     }
   ],
   "glossary": {
@@ -175,6 +175,34 @@
       "visibility": "PUBLIC",
       "path": "docs/MASTER_JOURNAL.md",
       "sha256": "5bd46539e6bee26e1a6931570113b5d2afa669209938227fe9ec4f127cb3e861"
+    },
+    {
+      "id": "CTX-20261017-BOOTSTRAP-SYNC-START",
+      "title": "CTX-20261017-BOOTSTRAP-SYNC-START — Public bootstrap synchronization start",
+      "topics": [
+        "bootstrap",
+        "sync",
+        "handoff"
+      ],
+      "recorded_at": "2026-10-17T02:12:33.591375+02:00",
+      "status": "PROPOSED",
+      "visibility": "PUBLIC",
+      "path": "docs/MASTER_JOURNAL.md",
+      "sha256": "bbb88ed83057367dac7b179c9259c4879f8cbddfd35b4ae29163c58881d0dfbb"
+    },
+    {
+      "id": "CTX-20261017-BOOTSTRAP-SYNC-END",
+      "title": "CTX-20261017-BOOTSTRAP-SYNC-END — Public delta checked before publication",
+      "topics": [
+        "bootstrap",
+        "sync",
+        "handoff"
+      ],
+      "recorded_at": "2026-10-17T02:12:56.884344+02:00",
+      "status": "VERIFIED",
+      "visibility": "PUBLIC",
+      "path": "docs/MASTER_JOURNAL.md",
+      "sha256": "0980ef15f59e8514c877d62276c6aa7128526de269ae685950d66240eb4b3a5d"
     }
   ]
 }

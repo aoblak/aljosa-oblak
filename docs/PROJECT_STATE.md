@@ -19,3 +19,7 @@ Context availability: present in this revision. Whether this revision is merged 
 Canonical shorthand: the accepted glossary defines MJ, PJ, XJ, UM, FMU, GS and SOT. GS means Git State.
 
 Next action: inspect the current Git state and relevant source/journal records before the next product change; record substantive work and refresh/validate the context index before completion.
+
+
+## 2026-10-17 public bootstrap synchronization
+The existing public portfolio journal now contains the source-linked bootstrap/runtime delta for BOOTSTRAP-SYNC-20261017. PR #10 and #12 in aoblak/ai-agent-web remain unmerged review candidates. This is public Git scope only; private global-journal identity, private synchronization and archive completeness remain unresolved. No live recipient receipt is observed. Verify the resulting branch/PR/main state before treating this proposed documentation change as adopted.

@@ -16,3 +16,25 @@ Adverse: PASS — 16 regression checks cover lost files, stale hashes, private/p
 Rollback: Revert this context change as a Git commit; preserve unrelated commits and earlier journal history.
 Next: Verify repository branch/merge state before reporting adoption; application and deployment status remain independently verified facts.
 <!-- /oos:event -->
+
+<!-- oos:event {"id": "CTX-20261017-BOOTSTRAP-SYNC-START", "recorded_at": "2026-10-17T02:12:33.591375+02:00", "occurred_at": "2026-10-17T02:12:33.591375+02:00", "actor": "OpenAI Codex", "topics": ["bootstrap", "sync", "handoff"], "status": "PROPOSED", "visibility": "PUBLIC"} -->
+## CTX-20261017-BOOTSTRAP-SYNC-START — Public bootstrap synchronization start
+Summary: Begin the user-authorized public-safe synchronization into the existing Git portfolio journal. Task BOOTSTRAP-SYNC-20261017; role coordinator. Earlier read-only discovery preceded this event; no historical start time is invented. Runtime reports GPT-6; precise model build, reasoning mode and subscription plan UNKNOWN. Private journals are outside this public change.
+Sources: Existing portfolio HEAD 56ba4f78cea480e3ccd0b5941b5be329241138ba; aoblak/ai-agent-web main 162a4ceeb0eba22e6eacf4e9fa7b247d8707b8ed.
+Integrity: Existing context bootstrap validated before changes.
+Independent: GitHub repository identities, PR heads and CI inspected separately from journal assertions.
+Adverse: Append-only public delta; no private history, access grant or receipt claim.
+Rollback: Revert the resulting documentation commit.
+Next: Append checked source versions and test results, regenerate index and verify remote bytes.
+<!-- /oos:event -->
+
+<!-- oos:event {"id": "CTX-20261017-BOOTSTRAP-SYNC-END", "recorded_at": "2026-10-17T02:12:56.884344+02:00", "occurred_at": "2026-10-17T02:12:56.884344+02:00", "actor": "OpenAI Codex", "topics": ["bootstrap", "sync", "handoff"], "status": "VERIFIED", "visibility": "PUBLIC"} -->
+## CTX-20261017-BOOTSTRAP-SYNC-END — Public delta checked before publication
+Summary: Task BOOTSTRAP-SYNC-20261017 END for local preparation. Public portfolio delta prepared in the existing journal; remote publication/adoption must be verified separately. Precise model build, mode, plan and measured active work time UNKNOWN; actor unchanged.
+Sources: ai-agent-web main 162a4ceeb0eba22e6eacf4e9fa7b247d8707b8ed; PR #10 head 4a71d44acf4f402ceee16fc3a0f4172555e70785; PR #12 head 132984baa8d825c7652a2c2bea21468144570f76.
+Integrity: PASS — portfolio validator VALID and 16 regression tests; PR #10 fresh 44 tests and structural validation pass; PR #12 fresh 288 runtime tests, 20 repository tests and 440 synthetic checks pass.
+Independent: PASS — GitHub current-head CI SUCCESS and open/unmerged states checked against recorded candidate SHAs; these provider observations are separate from local tests. No independent human/current-head implementation approval inferred.
+Adverse: PASS — reviewed public diff contains only public repository refs and bounded results; original journal prefixes preserved; no secrets/private histories, permissions changes, recipient delivery or main integration of runtime candidates asserted.
+Rollback: Revert the documentation commit.
+Next: Publish this delta through PR and verify remote bytes/adoption; implementation candidates still require independent current-head review; private global sync and actual collaborator receipt remain unresolved.
+<!-- /oos:event -->

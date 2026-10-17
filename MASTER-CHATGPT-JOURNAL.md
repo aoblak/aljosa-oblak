@@ -225,3 +225,15 @@ Actor: Codex. Recorded at: 2026-09-08T15:48:11+00:00.
 Added a reusable repository-local context package with AGENTS.md, governed state/journal entry paths, a JSON index, SHA-256 integrity checks and bounded journal topic selection. Definitions follow the accepted OOS governance glossary, including GS = Git State. This supplements the existing canonical baseline; it does not reconstruct missing historical sessions.
 
 Verification: 16 regression checks passed. This entry records the prepared/verified implementation; repository adoption must be checked against Git branch/merge state. No ChatGPT-to-iCloud sync is asserted. Rollback: revert this context integration while retaining earlier journal history.
+
+## 2026-10-17 — Shared bootstrap and collaborator runtime: verified public delta
+
+Recorded at: 2026-10-17T02:12:33.591375+02:00. Actor: OpenAI Codex; task BOOTSTRAP-SYNC-20261017.
+
+- Shared contract v1.2.3 was read from `aoblak/ai-agent-web@162a4ceeb0eba22e6eacf4e9fa7b247d8707b8ed`.
+- [Handoff gate PR #10](https://github.com/aoblak/ai-agent-web/pull/10), head `4a71d44acf4f402ceee16fc3a0f4172555e70785`, remains open; authenticated live transport and recipient acceptance are separate requirements.
+- [Collaborator runtime PR #12](https://github.com/aoblak/ai-agent-web/pull/12), head `132984baa8d825c7652a2c2bea21468144570f76`, remains open. Fresh local checks passed: 288 runtime tests, 20 repository tests and 440 separate synthetic contract checks. These are offline results, not live provider or production verification. Current-head independent review remains pending; the earlier review covers `300a0d650fc5220377ddaf85488ab93d7c64784b`, not this head.
+- The existing [Marko entrypoint](https://github.com/aoblak/ai-agent-web/blob/162a4ceeb0eba22e6eacf4e9fa7b247d8707b8ed/MARKO-START-HERE.md) supplies public onboarding. GitHub Issues/PRs can carry approved task-scoped exchanges. Git access does not establish direct chat access, delivery, acknowledgement or automatic wake-up. No private memory export, destination installation or recipient acceptance is claimed.
+- This entry updates only the existing public Git portfolio artifact. It does not resolve the identity/completeness of a private global journal or establish synchronization with iCloud or all prior conversations.
+
+Next: independent review of the exact candidate heads; verify the collaborator's approved destination and authenticated access before a live handoff.
