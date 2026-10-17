@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OOS AI Alignment Receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "agent",
+    "sync_ref",
+    "understood",
+    "alignment",
+    "compatibility",
+    "writeback",
+    "cost_control",
+    "timestamp"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "agent": {
+      "type": "object",
+      "required": [
+        "provider",
+        "model_or_agent"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "model_or_agent": {
+          "type": "string"
+        },
+        "session_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sync_ref": {
+      "type": "string"
+    },
+    "understood": {
+      "type": "string"
+    },
+    "alignment": {
+      "enum": [
+        "AGREE",
+        "CONCERN",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "required": [
+        "public_git_read"
+      ],
+      "properties": {
+        "public_git_read": {
+          "enum": [
+            "YES",
+            "NO",
+            "UNKNOWN"
+          ]
+        },
+        "private_git_read": {
+          "enum": [
+            "YES",
+            "NO",
+            "UNKNOWN"
+          ]
+        },
+        "artifact_by_id_version": {
+          "enum": [
+            "YES",
+            "NO",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "writeback": {
+      "enum": [
+        "DIRECT_GIT",
+        "INDIRECT",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "cost_control": {
+      "type": "string"
+    },
+    "proposed_change": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

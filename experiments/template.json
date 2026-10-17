@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1",
+  "experiment_id": "replace-me",
+  "question_version": "v1",
+  "canonical_ref": "replace-with-git-ref",
+  "question": "replace-me",
+  "purpose": "replace-me",
+  "audience": null,
+  "sampling_method": null,
+  "phases": {
+    "human_pre": {
+      "enabled": true
+    },
+    "model_independent": {
+      "enabled": true
+    },
+    "evidence": {
+      "enabled": true
+    },
+    "human_post": {
+      "enabled": true
+    },
+    "model_post": {
+      "enabled": false
+    },
+    "behavior": {
+      "enabled": false
+    }
+  },
+  "result_action": "NONE"
+}

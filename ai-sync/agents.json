@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1",
+  "purpose": "Track which AI systems have actually returned an alignment receipt against the canonical public sync contract.",
+  "agents": [
+    {
+      "provider": "OpenAI",
+      "agent": "ChatGPT",
+      "connection_from_current_chat": "DIRECT",
+      "receipt_status": "RECORDED",
+      "receipt_ref": "ai-sync/receipts/openai-chatgpt-gpt-5.6-sol-2026-09-25.json",
+      "alignment": "CONCERN",
+      "sync_ref": "aoblak/aljosa-oblak@89691b11ebb698da3ce6599bd87c439d9148041c"
+    },
+    {
+      "provider": "Manus",
+      "agent": "Manus",
+      "connection_from_current_chat": "TOOL_LIMITED",
+      "receipt_status": "NOT_TESTED"
+    },
+    {
+      "provider": "Anthropic",
+      "agent": "Claude",
+      "connection_from_current_chat": "NONE",
+      "receipt_status": "NOT_TESTED"
+    },
+    {
+      "provider": "Google",
+      "agent": "Gemini",
+      "connection_from_current_chat": "NONE",
+      "receipt_status": "NOT_TESTED"
+    }
+  ],
+  "rule": "Connection presence is not alignment. Mark aligned only after a receipt is returned against an exact Git ref."
+}
